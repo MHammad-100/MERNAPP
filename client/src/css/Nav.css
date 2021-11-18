@@ -1,0 +1,51 @@
+.my-horizontal-nav
+{
+    float: left;
+    position: relative;
+    height: 4vw;
+    width: 100vw;
+    background: linear-gradient(to right, transparent, rgb(5, 27, 59)), url("../images/images\ 3.jpg");
+    text-align: center;
+    color: white;
+}   
+.my-horizontal-nav ul li{
+    display: inline-flex;
+    height: 4vw;
+    text-decoration: none;
+    line-height: 4vw;
+    list-style: none;
+    margin-right: 5vw;
+    padding: 0px 2vw 0px 2vw;
+}
+.my-horizontal-nav ul li a
+{
+    margin: auto;
+    color: white;
+    text-decoration: none;
+    font-size: 1vw;
+}
+.active, .my-horizontal-nav ul li:hover
+{
+    cursor: pointer;
+}
+@media only screen and (max-width:786px) {
+    .my-horizontal-nav{
+        height: 20px;
+        line-height: 20px;
+    }
+    .my-horizontal-nav ul {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .my-horizontal-nav ul li{
+        margin-right: 3px;
+    }
+    .my-horizontal-nav ul li a{
+        line-height: 20px;
+        font-size: 8px;
+
+    }
+    
+    
+}

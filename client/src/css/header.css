@@ -1,0 +1,160 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    user-select: none;
+}
+/*--------------------------------------header css start here---------------------------------------------------------------------*/
+.header-div
+{
+    height: 10vw;
+    width: 100vw;
+    line-height: 10vw;
+    text-align: center;
+    background: linear-gradient(to right, transparent, rgb(25, 121, 255)), url("../images/header-background-image.jpg");
+}
+.header-bar
+{
+    background-color: rgb(0, 3, 41);
+    height: 1vw;
+    width: 100vw;
+}
+/*---------------------------------------header search css start here------------------------------------------------------------------*/
+.header-search-bar
+{
+    height: 10vw;
+    width: 40vw;
+    float: left;
+}
+.header-search-bar input[type = 'text']
+{
+    height: 3vw;
+    box-sizing: border-box;
+    padding-left: 0.5vw;
+    width: 20vw;
+    background: #f1f1f1;
+    font-size: 1vw;
+    border: none;
+}
+.header-search-bar button{
+    height: 3vw;
+    width: 5vw;
+    background: #2196F3;
+    color: white;
+    border: none; 
+    cursor: pointer;
+    font-size: 1vw;
+}
+.header-search-bar button:hover
+{
+    background-color: #0c73c7;
+}
+/*---------------------------------------header text css start here------------------------------------------------------------------*/
+.header-text
+{
+    float: left;
+    height: 10vw;
+    width: 30vw;
+    position: relative;
+    border-radius: 0px 0px 8vw 0px;
+    background: linear-gradient(to right, transparent, rgb(5, 83, 201)), url("../images/header-text-image.webp");
+    
+}
+.header-upper-text
+{
+    height: 7vw;
+    line-height: 7vw;
+    font-size: 3vw;
+    font-family: 'Lobster', cursive;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+.header-sub-text
+{
+    height: 3vw;
+    line-height: 1vw;
+    font-size: 1vw;
+    color: white;
+    background: linear-gradient(to right, transparent, rgb(99, 148, 221)), url("../images/sub-text-color.jpg");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+/*---------------------------------------header login css start here------------------------------------------------------------------*/
+.header-login-link  
+{
+    float: left;
+    height: 10vw;
+    width: 30vw;
+    color: white;
+    font-size: 1vw;
+
+}
+.header-login-link a{
+
+    text-decoration: none;
+    color: white;
+    font-size: 1vw;
+    margin: 1vw;
+}
+.header-login-link a:hover{
+    
+    color: lightblue;
+    font-weight: bold;
+}
+.clear-float-effect
+{
+    clear: both;
+}
+@media only screen and (max-width:786px ){
+.header-text
+{
+    float:none;
+    width: 100%;
+    border-radius: 0px;
+    height: 60px;
+}
+.header-upper-text
+{
+    height: 80%;
+    font-size: 30px;
+    line-height: 40px;
+}
+.header-sub-text
+{
+    width: 100%;
+    font-size: 12px;
+    top: -5px;
+    position: relative;
+}
+.header-search-bar
+{
+    width:60%;
+    height: 30px;
+    position: relative;
+    display: flex;
+    justify-content:center;
+    background-color: rgb(6, 6, 48);
+}
+.header-search-bar input[type="text"], .header-search-bar button
+{
+    margin-top: 10px;
+    height: 12px;
+}
+.header-login-link  
+{
+    width: 40%;
+    background-color: rgb(6, 6, 48);
+    height: 30px;
+    line-height: 30px;
+    font-size: 10px;
+}
+.header-login-link a{
+    font-size: 10px;
+    text-align:left;
+    margin: 4px;
+
+}
+
+}
